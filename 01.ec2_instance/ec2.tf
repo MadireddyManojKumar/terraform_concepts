@@ -1,6 +1,6 @@
 resource "aws_instance" "mongodb"{
-    ami = ami-0055977a6e828a4f4
-    instance = "t3.micro"
+    ami = "ami-0055977a6e828a4f4"
+    instance_type = "t3.micro"
 
     tags =  {
         name = "MONGODB"
