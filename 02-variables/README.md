@@ -47,6 +47,22 @@ resource "aws_instance" "web" {
 
 - If you put values in `terraform.tfvars`, Terraform loads them automatically.
 - Don't put sensitive information in this file.
+- even though if we declare variable in terraform.tfvard, inorder to refer that value , we need to have avariable in variables.tf file.(but we dont have to give default value in variables.tf file)
+ex: 
+```hcl
+# terraform.tfvars
+instance_type = "t3.medium"
+```
+
+```hcl
+# variables.tf
+variable "instance_type" {
+  description = "EC2 instance type"
+  type        = string
+}
+```
+in main.tf file we can refer variable like instance_type=var.instance_type. --> though we havent declared that variable default, terraform will automatically read from  terraform.tf file
+
 
 ```hcl
 # terraform.tfvars

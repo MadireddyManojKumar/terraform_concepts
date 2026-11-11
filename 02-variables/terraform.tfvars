@@ -3,4 +3,4 @@
 # when we execute terraform, terraform.tfvars fill be loaded automatically.
 
 ami_id="ami-0055977a6e828a4f4"
-instance_type="t3.micro"
+aws_instance_type="t3.micro"
