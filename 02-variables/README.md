@@ -47,7 +47,7 @@ resource "aws_instance" "web" {
 
 - If you put values in `terraform.tfvars`, Terraform loads them automatically.
 - Don't put sensitive information in this file.
-- even though if we declare variable in terraform.tfvard, inorder to refer that value , we need to have avariable in variables.tf file.(but we dont have to give default value in variables.tf file)
+- even though if we declare variable in terraform.tfvars, inorder to refer that value , we need to have a variable in variables.tf file.(but we dont have to give default value in variables.tf file)
 ex: 
 ```hcl
 # terraform.tfvars
