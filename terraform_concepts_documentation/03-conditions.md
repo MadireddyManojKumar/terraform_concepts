@@ -1,4 +1,4 @@
-# Terraform Conditionals: Choosing `instance_type` by Environment
+# Terraform Conditionals Examples
 
 Different ways to choose an EC2 `instance_type` (and related settings) based on `var.tags.Environment`.
 
